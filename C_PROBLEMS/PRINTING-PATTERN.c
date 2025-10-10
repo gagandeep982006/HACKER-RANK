@@ -31,7 +31,7 @@ int main() {
 }
 
 
-//second and easy method to solve this problem
+//second and tricky method to solve this problem
 #include <stdio.h>
 
 int main() 
