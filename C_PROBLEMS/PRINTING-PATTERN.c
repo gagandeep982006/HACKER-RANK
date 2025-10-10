@@ -45,15 +45,15 @@ int main()
     }
     
     for(int i = 0,k = 2;i<2*n -1;i++){
-        if( i > 2*n/2){
+        if( i > n){
             k++;
         }
         for(int j = 0; j<(2*n -1);j++){
-            if((j>=i )&& (j<((2*n-1)-(i))) && i < (2*n)/2)
+            if((j>=i )&& (j<((2*n-1)-(i))) && i < n)
                 arr[j] = n-i;
             else if (j >= ((2*n-1)-(i+1)) && (j < i))
                 arr[j] = k;
-            (j != 2*n-2)? printf("%d ",arr[j]) : printf("%d",arr[j]);
+            printf("%d ",arr[j]);
         }
         printf("\n");
     }
