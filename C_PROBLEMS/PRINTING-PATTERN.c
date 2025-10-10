@@ -10,6 +10,28 @@
 5 5 5 5 5 5 5 5 5
 */
 
+//first and easy method to solve this problem
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    int L = 2 * n - 1;
+    for (int i = 1; i <= L; i++) {
+        for (int j = 1; j <= L; j++) {
+            int dr = abs(i - n);
+            int dc = abs(j - n);
+            int d  = dr > dc ? dr : dc;
+            printf("%d ", d + 1);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+
+//second and easy method to solve this problem
 #include <stdio.h>
 
 int main() 
